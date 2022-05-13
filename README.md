@@ -1,2 +1,3 @@
 # psychic-potato-Isaac
-Isaac's repo for Foundation project for Revature
+Foundations project for Revature
+employee database project
