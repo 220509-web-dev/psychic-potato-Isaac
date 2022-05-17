@@ -16,6 +16,12 @@ create table departnemts (
     departnemts  varchar unique not null
 );
 
+-- create salary table
+create table salaries (
+    id int generated always as identity primary key,
+    salaries varchar not null
+);
+
 -- create employee table
 create table employees (
     id            int generated always as identity,
