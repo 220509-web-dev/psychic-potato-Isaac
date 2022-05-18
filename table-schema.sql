@@ -27,8 +27,8 @@ create table employees (
     id            int generated always as identity,
   first_name    varchar not null,
   last_name     varchar not null,
-  email         varchar unique not null,
-  username      varchar unique not null check (length(username) >= 6),
+  department    varchar unique not null,
+  salary      varchar  not null check ,
   role_id       int,
 
   constraint employees_pk
