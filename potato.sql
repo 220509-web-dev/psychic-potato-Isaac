@@ -1,8 +1,8 @@
 -- create the schema
-create schema potato-llc;
+create schema potato_llc;
 
 -- sets path to schema
-set search_path to potato-llc;
+set search_path to potato_llc;
 
 -- create employee role table
 create table employee_roles (
@@ -12,13 +12,13 @@ create table employee_roles (
 
 -- create departnemt table
 create table departnemts (
-    id   int generated always as identity primary key,
+    id   int ,
     departnemts  varchar unique not null
 );
 
 -- create salary table
 create table salaries (
-    id int generated always as identity primary key,
+    id int ,
     salaries varchar not null
 );
 
@@ -28,7 +28,7 @@ create table employees (
   first_name    varchar not null,
   last_name     varchar not null,
   department    varchar unique not null,
-  salary      varchar  not null check ,
+  salary      varchar  not null, 
   role_id       int,
 
   constraint employees_pk
