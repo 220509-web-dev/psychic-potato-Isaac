@@ -11,9 +11,9 @@ create table employee_roles (
 );
 
 -- create departnemt table
-create table departnemts (
+create table departments (
     id   int ,
-    departnemts  varchar unique not null
+    departments  varchar unique not null
 );
 
 -- create salary table
