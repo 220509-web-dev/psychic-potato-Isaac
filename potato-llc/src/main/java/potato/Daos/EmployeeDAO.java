@@ -1,4 +1,6 @@
 package potato.Daos;
 
-public class EmployeeDAO {
+import potato.entities.Employees;
+public interface EmployeeDAO {
+    
 }
