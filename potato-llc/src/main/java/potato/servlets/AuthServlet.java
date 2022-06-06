@@ -1,4 +1,4 @@
-package servlets;
+package potato.servlets;
 
 public class AuthServlet {
 }
