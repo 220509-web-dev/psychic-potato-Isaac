@@ -1,6 +1,5 @@
-*.iml
-.idea/
-target/
-*.class
-*.jar
-*.war
+
+/potato-llc/.idea/
+/.idea/
+/.vs/
+/potato-llc/target/
