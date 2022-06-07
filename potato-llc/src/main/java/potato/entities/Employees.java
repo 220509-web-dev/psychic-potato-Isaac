@@ -2,15 +2,14 @@ package potato.entities;
 
 public class Employees {
     private String id;
-
+    private String employeeid;
     private String firstname;
-
     private String lastname;
     private String department;
     private String salaries;
     private String roles;
 
-    public Employees(String id, String firstname, String lastname, String department, String salaries, String roles){
+    public Employees(String id, String firstname, String lastname, String department, String salaries, String roles) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -26,6 +25,11 @@ public class Employees {
     public void setId(String id) {
         this.id = id;
     }
+
+    public void setEmployeeid(int generatedId) {
+        this.employeeid =employeeid;
+    }
+
 
     public String getFirstName() {
         return firstname;
@@ -51,7 +55,7 @@ public class Employees {
         this.department = department;
     }
 
-    public  String getSalaries() {
+    public String getSalaries() {
         return salaries;
     }
 
@@ -78,4 +82,6 @@ public class Employees {
                 ", roles='" + roles + '\'' +
                 '}';
     }
+
 }
+
