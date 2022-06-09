@@ -1,7 +1,7 @@
 set search_path to potato-llc;
 
 -- Create employee roles
-insert into employee_role values ('Project Manager'), ('Project Lead'), ('Senior Developer'),('Junior Developer'), ('Intern'), ('HR Specialist');
+insert into employee_roles values ("Project Manager"), ("Project Lead"), ("Senior Developer"),("Junior Developer"), ("Intern"), ("HR Specialist");
 
 -- Create departments data
 insert into departments values ('Management'), ('Developers'), ('Human Resources');

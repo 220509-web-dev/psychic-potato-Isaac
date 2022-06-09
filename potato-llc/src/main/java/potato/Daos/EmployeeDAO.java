@@ -1,17 +1,20 @@
 package potato.Daos;
 
-import potato.entities.Employees;
+import potato.entities.Employee;
 
+import java.sql.SQLException;
 import java.util.List;
 public interface EmployeeDAO {
 
-    Employees createEmployee(Employees employee);
-    Employees getEmployeesById(int id);
+    Employee createEmployee(Employee employee) throws SQLException;
 
-    List<Employees> getAllEmployees();
+    Employee getEmployeeById(int id) throws SQLException;
 
-    Employees updateEmployees(Employees employee);
+    Employee getEmployeeByUsername(String username);
+    List<Employee> getAllEmployee();
 
-    void deleteEmployeesById(int id);
-    
+    Employee updateEmployee(Employee employee);
+
+    void deleteEmployeeById(int id);
+
 }

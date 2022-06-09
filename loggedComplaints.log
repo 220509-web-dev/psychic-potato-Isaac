@@ -1,0 +1,48 @@
+06/09/2022 11:52:14
+org.postgresql.util.PSQLException: The column index is out of range: 5, number of columns: 4.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:70)
+	at org.postgresql.core.v3.SimpleParameterList.setBinaryParameter(SimpleParameterList.java:137)
+	at org.postgresql.jdbc.PgPreparedStatement.bindBytes(PgPreparedStatement.java:1051)
+	at org.postgresql.jdbc.PgPreparedStatement.setInt(PgPreparedStatement.java:300)
+	at potato.Daos.EmployeeDaoPostgres.createEmployee(EmployeeDaoPostgres.java:23)
+	at potato.app.App.main(App.java:20)
+
+06/09/2022 11:52:38
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:156)
+	at potato.Daos.EmployeeDaoPostgres.createEmployee(EmployeeDaoPostgres.java:25)
+	at potato.app.App.main(App.java:20)
+
+06/09/2022 11:53:09
+org.postgresql.util.PSQLException: ERROR: relation "potato_llc.employee" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:156)
+	at potato.Daos.EmployeeDaoPostgres.createEmployee(EmployeeDaoPostgres.java:25)
+	at potato.app.App.main(App.java:20)
+
+06/09/2022 11:54:45
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "employees_username_key"
+  Detail: Key (username)=(Ttester99@revature.net) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:156)
+	at potato.Daos.EmployeeDaoPostgres.createEmployee(EmployeeDaoPostgres.java:25)
+	at potato.app.App.main(App.java:20)
+
