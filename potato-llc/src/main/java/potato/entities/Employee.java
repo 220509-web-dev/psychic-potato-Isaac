@@ -14,7 +14,8 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String username, String password, String first_name, String last_name, String salary, int role_id) {
+    public Employee(int id, String username, String password, String first_name, String last_name, String salary,
+                    int role_id) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -85,7 +86,9 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return id == employee.id && role_id == employee.role_id && Objects.equals(username, employee.username) && Objects.equals(password, employee.password) && Objects.equals(first_name, employee.first_name) && Objects.equals(last_name, employee.last_name) && Objects.equals(salary, employee.salary);
+        return id == employee.id && role_id == employee.role_id && Objects.equals(username, employee.username) &&
+                Objects.equals(password, employee.password) && Objects.equals(first_name, employee.first_name) &&
+                Objects.equals(last_name, employee.last_name) && Objects.equals(salary, employee.salary);
     }
 
     @Override

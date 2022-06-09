@@ -22,7 +22,7 @@
     </servlet-mapping>
 
 <!--    <listener>-->
-<!--        <listener-class>com.revature.quizzard.util.ContextLoaderListener</listener-class>-->
+<!--        <listener-class>util.ContextLoaderListener</listener-class>-->
 <!--    </listener>-->
 
 <!--    <filter>-->
