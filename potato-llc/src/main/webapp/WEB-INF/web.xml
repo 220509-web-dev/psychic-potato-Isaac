@@ -4,7 +4,7 @@
              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>potato</display-name>
+    <display-name>potato-LLC</display-name>
     
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
@@ -27,7 +27,7 @@
 
 <!--    <filter>-->
 <!--        <filter-name>CustomFilter</filter-name>-->
-<!--        <filter-class>com.revature.quizzard.filters.CustomFilter</filter-class>-->
+<!--        <filter-class>filters.CustomFilter</filter-class>-->
 <!--    </filter>-->
 
 <!--    <filter-mapping>-->
