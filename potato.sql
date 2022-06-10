@@ -5,12 +5,14 @@ create schema potato_llc;
 set search_path to potato_llc;
 
 -- create employee table
+drop table if exists employees;
 create table employees (
-    id            int generated always as identity,
+  id            int generated always as identity,
+  username      varchar unique not null,
+  password      varchar not null,
   first_name    varchar not null,
   last_name     varchar not null,
-  department    varchar unique not null,
-  salary      varchar  not null, 
+  salary        varchar  not null, 
   role_id       int,
 
   constraint employees_pk

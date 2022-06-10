@@ -7,13 +7,13 @@ function login() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    fetch('/quizzard/auth', {
+    fetch('/potato/emp', {
         method: 'POST',
         body: JSON.stringify({username, password})
     }).then(function () {
         console.log('login success!');
     }).catch(() => {
-        console.log("oops");
+        console.log("unable to login");
     });
 
 }

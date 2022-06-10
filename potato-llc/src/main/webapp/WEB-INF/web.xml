@@ -7,7 +7,7 @@
     <display-name>potato-LLC</display-name>
     
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>getpage.html</welcome-file>
     </welcome-file-list>
 
     <servlet>
